@@ -20,9 +20,13 @@ loop do
 
   # Read the first line of the request (the Request-Line)
   request = socket.gets
+  line_2 = socket.gets
+  line_3 = socket.gets
 
   # Log the request to the console for debugging
   STDERR.puts request
+  STDERR.puts line_2
+  STDERR.puts line_3
 
   response = "Hello World!\n"
 
