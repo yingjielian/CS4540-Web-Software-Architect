@@ -19,15 +19,36 @@ loop do
   socket = server.accept
 
   # Read the first line of the request (the Request-Line)
+  lines = []
+  10.times do
+    lines << socket.gets
+  end 
+  
   request = socket.gets
-  line_2 = socket.gets
-  line_3 = socket.gets
+  #line_2 = socket.gets
+  #line_3 = socket.gets
 
   # Log the request to the console for debugging
-  STDERR.puts request
-  STDERR.puts line_2
-  STDERR.puts line_3
+  #STDERR.puts request
+  #STDERR.puts line_2
+  #STDERR.puts line_3
 
+STDERR.puts "----------------"
+lines.each do |single_line, index|
+  STDERR.puts "#{index+1}. #{single_line}"
+  #STDERR.puts index + '. ' + single_line
+end
+
+STDERR.puts lines "-----------------"
+
+  # extract the line of headers with the user agent
+  user_agent_line = lines[2]
+  # tokenize it and extract the user agent string to return
+  user_agent_str = user_agent_line.split[1]
+  
+  response = "You are using #{user_agent_str}\r\n"
+  STDERR.puts "sending back this: #{response}"
+  
   response = "Hello World!\n"
 
   # We need to include the Content-Type and Content-Length headers

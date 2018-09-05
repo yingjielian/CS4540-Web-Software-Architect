@@ -53,7 +53,7 @@ class WebServerTest < Minitest::Test
   end
 
    def test_response_with_get_is_handled
-    ws = WebServer.new
+    ws = WebServer.new(2350)
     
     # this is some metaprogramming -- it adds a new function to the
     # class during runtime.
