@@ -9,6 +9,9 @@
 
 # How to use it: Then, typing "ruby run_web_server.rb" to operate the code and start to listen the 
 # local server. Finally, typing "localhost:1234" in the browser to see the result and it will work.
+#
+#
+# How many hours did it take to finish this assignment: 8.8
 
 require 'socket' # Provides TCPServer and TCPSocket classes
 
