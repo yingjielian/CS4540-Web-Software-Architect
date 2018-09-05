@@ -1,0 +1,7 @@
+I implemented a html style font and text in my web_server.rb class.
+
+In order to see it, you will need to first run the class, you will need to type
+"ruby run_web_server.rb" on your command line and go to chrome broswer type
+"localhost:1234". It may take several times to see the results.
+
+Finally, you will see the background changed and my wonderful text!

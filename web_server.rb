@@ -29,6 +29,7 @@ class WebServer
     def listen()
       # loop infinitely, processing one incoming connection at a time.    
       loop do
+	@socket=@server.accept
         collect_request
         create_response
         write_response
@@ -53,12 +54,21 @@ class WebServer
     end
     
     # Creates a method called "create_response" in order to write the response to the local server
-    # that will show in the broswer
+    # that will show the text in the broswer.
     def write_response()
+	info='<!doctype html>
+	      <html lang="zh-Hans">
+	      <body bgcolor="#FF7F50" style=font-family:tahoma;color:#24c93a;font-size:28px;text-align:left;line-height:280px;>Homework1 Extra Part! 
+            <h1>Thank you!</h1>
+		<p id="p1">Goodbye!</p>
+	      </body>
+	      </html>'
         @socket.print "HTTP/1.1 200 OK\r\n" +
-               "Content-Type: text/plain\r\n" +
-               "Content-Length: #{response.bytesize}\r\n" +
+               "Content-Type: text/html; charset=utf-8\r\n" +
+               "Content-Length: #{info.bytesize}\r\n" +
                "Connection: close\r\n"
+	@socket.print "\r\n"
+	@socket.print info
     end
 end
 
