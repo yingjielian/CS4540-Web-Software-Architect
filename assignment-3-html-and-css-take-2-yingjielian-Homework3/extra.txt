@@ -1,0 +1,7 @@
+I implemented two extra features in my index.html:
+
+1.Making the text blinking. The basic idea is that add a blinking in the css
+file and call the function in index.html.
+
+2.Adding the music player. When you click the player button you can listen the music.
+Also you can click the mute to mute the music.
