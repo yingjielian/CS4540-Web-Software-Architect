@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KslWatcherV2</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "ksl_watcher.css" %>
+    <%= favicon_link_tag asset_path('pikacu.png'), :rel => 'icon', :type =>  'image/png' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

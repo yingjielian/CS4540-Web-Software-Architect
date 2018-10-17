@@ -1,0 +1,27 @@
+<h1>KSLWatcher</h1>
+<div id='intro' class='nice-box'>
+  <p class='nice-box-header'>
+    Welcome to the KSLWatcher!
+  </p>
+  <p>
+    This service will keep an eye on the KSL Classifieds for you and alert
+    you when a new listing of interest appears.  Using this system means:
+      <ul>
+        <li>
+          More free time -- no longer do you need to visit KSL regularly to check for that unopened BeeGees vinyl record you've been pining after.
+        </li>
+        <li>
+          Fewer lost opportunities -- don't lose out to someone who's spending all their time scanning the KSL site while you do real work in the real world.
+        </li>
+      </ul>
+  </p>
+</div>
+<div id='signup-pitch' class='nice-box'>
+  Sign up to be on our mailing list.  We'll let you know as soon as the 
+  service goes live.
+  <%# add your code here to link to creating a new user, label the link "Register" %>
+</div>
+<div id='other-links' class='nice-box'>
+  <%# add your code here to link to listing the Listings, label the link "Listings" %>
+  <%# add your code here to link to listing the Searches, label the link "Searches" %>
+</div>

@@ -1,0 +1,54 @@
+body{
+    font-family: 'Montserrat';
+    font-size: 13px;
+    line-height: 32px;
+    /*background-image: url("car-desktop-wallpaper-25.jpg");
+    background-size:     cover;                  
+    background-repeat:   no-repeat;
+    background-position: center center;
+    width: auto;
+    height: auto;*/
+}
+
+#welcome-text{
+    /*background:#77bc44;*/
+    color: #D4C16A;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 5px 5px #7688A9;
+}
+
+#button-link{
+    background:White;
+    color: black;
+    border-radius: 3px;
+    text-decoration: none;
+    padding:3px;
+}
+
+.nice-box{
+    background-color: green;
+    color: #C7E99B;
+    margin: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.blinking{
+    animation:blinkingText 5.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: red;    }
+    10%{    color: transparent; }
+    20%{    color: #120;}
+    40%{    color: black;  }
+    50%{    color: transparent;  }
+    60%{    color: blue;  }
+    70%{    color: transparent;  }
+    80%{    color: purple  }
+    90%{    color: transparent;  }
+    100%{   color: yellow    }
+}

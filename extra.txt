@@ -1,0 +1,13 @@
+To see my ImpressMe part you should first change the ruby '2.4.1' to ruby '2.4.4' on line 4 in ksl_watcher_v2/Gemfile. Then you should run rails server on you command. Then, it will give you an error said close your server and run bin/rails db:migrate RAILS_ENV=development in your command. Aafter that, restart your server again, now you should be able to see my ImpressMe version on following parts:
+
+1.Add the a css styling to the home page of my KSLWatcher. The steps are: add 
+  <%= stylesheet_link_tag "ksl_watcher" %> to app/view/layouts/application.html.erb
+
+next,add Rails.application.config.assets.precompile += %w( ksl_watcher.css ) to config/initializers/assets.rb
+
+then add my ksl_watcher.css into app/assets/stylesheets
+
+2.Add an icon for the the home page of my KSLWatcher. The steps are:
+    <%= favicon_link_tag asset_path('pikacu.png'), :rel => 'icon', :type =>  'image/png' %> to app/view/layouts/application.html.erb
+
+then add the image pikacu.png to app/assets/images
